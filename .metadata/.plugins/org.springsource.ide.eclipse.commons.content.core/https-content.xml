@@ -136,4 +136,7 @@
     <descriptor id="org.springframework.templates.mvc" kind="template" local="true" name="Spring MVC Project" requiresbundle="org.eclipse.m2e.core" size="0" version="3.2.2">
         <description>A new Spring MVC web application development project</description>
     </descriptor>
+    <descriptor id="org.springframework.templates.mvc" kind="template" local="true" name="Spring MVC Project" requiresbundle="org.eclipse.m2e.core" size="0" version="3.2.2">
+        <description>A new Spring MVC web application development project</description>
+    </descriptor>
 </descriptors>
