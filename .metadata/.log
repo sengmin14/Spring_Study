@@ -185,3 +185,21 @@ java.net.UnknownHostException: 알려진 호스트가 없습니다 (dist.springs
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2024-05-03 09:05:09.314
 !MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-05-03 09:06:52.574
+!MESSAGE An internal error occurred during: "Refreshing server adapter list".
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 0
+	at java.base/java.util.ArrayList.add(ArrayList.java:486)
+	at java.base/java.util.ArrayList.add(ArrayList.java:498)
+	at org.eclipse.wst.server.discovery.internal.ExtensionUtility.addExtension(ExtensionUtility.java:385)
+	at org.eclipse.wst.server.discovery.internal.ExtensionUtility.addExtensions(ExtensionUtility.java:403)
+	at org.eclipse.wst.server.discovery.internal.ExtensionUtility.getAllExtensionsWithServer(ExtensionUtility.java:469)
+	at org.eclipse.wst.server.discovery.internal.ExtensionUtility.getExtensionsWithServer(ExtensionUtility.java:550)
+	at org.eclipse.wst.server.discovery.internal.ExtensionUtility.refreshServerAdapters(ExtensionUtility.java:681)
+	at org.eclipse.wst.server.discovery.Discovery.refreshServerAdapters(Discovery.java:68)
+	at org.eclipse.wst.server.ui.ServerUIUtil$1RefreshJob.run(ServerUIUtil.java:109)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jst.server.preview.adapter 4 0 2024-05-03 09:07:02.357
+!MESSAGE Could not find required bundle slf4j.api
