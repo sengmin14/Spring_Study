@@ -9,18 +9,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-public class YoilTellerMVC {
-	
+public class YoilTellerMVC2 {
 	@ExceptionHandler(Exception.class)
 	public String catcher(Exception ex) {
-		ex.printStackTrace();
 		return "yoilError";
 	}
 	
-    @RequestMapping("/getYoilMVC") // http://localhost/ch2/getYoilMVC
-    public String main(@RequestParam(required = true)int year, 
-    			@RequestParam(required = true) int month, 
-    			@RequestParam(required = true) int day, Model model) {
+    @RequestMapping("/getYoilMVC2") // http://localhost/ch2/getYoilMVC2
+    public String main(@RequestParam(required=true) int year, 
+    		@RequestParam(required=true) int month, 
+    		@RequestParam(required=true) int day, Model model) {
  
         // 1. 유효성 검사
     	if(!isValid(year, month, day)) 
@@ -53,4 +51,4 @@ public class YoilTellerMVC {
     	
     	return (1<=month && month<=12) && (1<=day && day<=31); // 간단히 체크 
     }
-}
+} 
