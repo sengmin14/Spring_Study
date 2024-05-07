@@ -11,10 +11,10 @@ class Engine {}
 public class Main1 {
     public static void main(String[] args) throws Exception{
 
-        Car car = (Car)getObject("car");
-        Engine engine = (Engine) getObject("engine");
-        System.out.println("car = " + car);
-        System.out.println("engine = " + engine);
+            Car car = (Car)getObject("car");
+            Engine engine = (Engine) getObject("engine");
+            System.out.println("car = " + car);
+            System.out.println("engine = " + engine);
     }
 
     static Object getObject(String key) throws Exception{
